@@ -47,11 +47,17 @@ else{
 
 //Program 3: Leap Year Checker
 let year = prompt("Please enter the current year: ");
-if (year % 4 === 0){
-    console.log("The year", year, "is a leap year.") // Uses modulus operation to get the leap year, since every leap year is divisible by four.
+
+if (year < 0){
+    console.log("This value is invalid.") // Outputs this message if user inputs a negative number.
 }
 else{
-    console.log("The year", year, "is not a leap year.") // Prints if remainder is not 0, meaning the year is not divisible by four (not a leap year).
+    if (year % 4 === 0){
+        console.log("The year", year, "is a leap year.") // Uses modulus operation to get the leap year, since every leap year is divisible by four.
+    }
+    else{
+        console.log("The year", year, "is not a leap year.") // Prints if remainder is not 0, meaning the year is not divisible by four (not a leap year).
+    }
 }
 
 
